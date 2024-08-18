@@ -102,7 +102,10 @@ namespace Ogre {
     #    endif
     #else
     #   if OGRE_COMPILER == OGRE_COMPILER_MSVC
-    #       if OGRE_COMP_VER >= 1600 // VC++ 10.0
+	#		if OGRE_COMP_VER > 1912
+	#			define HashMap ::std::unordered_map
+	#			define HashSet ::std::unordered_set
+    #       elif OGRE_COMP_VER >= 1600 // VC++ 10.0
 	#			define HashMap ::std::tr1::unordered_map
 	#           define HashSet ::std::tr1::unordered_set
 	#		elif OGRE_COMP_VER > 1300 && !defined(_STLP_MSVC)
