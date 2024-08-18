@@ -29,8 +29,10 @@ THE SOFTWARE.
 /*
 The original file was part of the OGRE project version 1.8.1. All
 modifications to this source code file by the dmk project are subject
-to the same original MIT license listed above. Having been modified,
+to the same original MIT license listed above (or in project license file). 
+Having been modified,
 this source code file is now part of the dmk project.
+Copyright (c) 2024 Marat Sungatullin
 */
 #ifndef DMK_OGRE_PLATFORM_H
 #define DMK_OGRE_PLATFORM_H
